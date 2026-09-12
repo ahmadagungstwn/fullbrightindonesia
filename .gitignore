@@ -15,6 +15,8 @@
 .env
 .env.backup
 .env.production
+.env.local
+.env.*.local
 .phpactor.json
 .phpunit.result.cache
 Homestead.json
@@ -27,5 +29,24 @@ yarn-error.log
 /.nova
 /.vscode
 /.zed
+.vite/
 new/
 admin.md
+
+# Testing, QA, Scratch & MCP artifacts
+/.playwright-mcp/
+/.playwright/
+/playwright-report/
+/test-results/
+/scratch/
+/*.png
+/*.jpg
+/*.jpeg
+/*.webp
+/*.zip
+
+# Trial source files (integrated into public/assets/ and ctwa.tsx)
+/assets/
+/LP.tsx
+
+

@@ -56,6 +56,8 @@
         })();
     </script>
 
+{{-- Font handling matches reference website (uses system fallback without external webfont overhead) --}}
+
     @fonts
     @viteReactRefresh
     @vite(['resources/css/app.css', 'resources/js/app.tsx', "resources/js/pages/{$page['component']}.tsx"])
