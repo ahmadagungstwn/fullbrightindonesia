@@ -22,7 +22,7 @@ class CreateAdmin extends Command
         $validator = validator(compact('name', 'email', 'password'), [
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'email', 'max:255'],
-            'password' => ['required', Password::defaults()],
+            'password' => ['required', 'string', 'min:8'],
         ]);
 
         if ($validator->fails()) {
