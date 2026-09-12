@@ -22,7 +22,6 @@ class DatabaseSeeder extends Seeder
                 'name' => 'Admin Full Bright',
                 'password' => Hash::make('Fullbright2026'),
                 'role' => 'admin',
-                'email_verified_at' => now(),
             ],
         );
 
